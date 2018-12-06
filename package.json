@@ -1,0 +1,26 @@
+{
+  "domain": "snaka",
+  "count": "1.0.0",
+  "description": "script and analyze program for ads",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Eden Keshet",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "mongoose": "^5.3.14",
+    "request": "latest"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}
