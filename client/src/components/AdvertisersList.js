@@ -74,7 +74,7 @@ const mapStateToProps = (state) => ({
     item: state.item
 });
 
-const mapActionsToProps = {
+const mapActionsToProps = { //com
     getItems: getItems
 };
 
