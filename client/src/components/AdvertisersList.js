@@ -13,7 +13,7 @@ class AdvertisersList extends Component{
         this.props.getItems();
     }
 
-    render() {
+    render() {  // change
         const  {items, loading} = this.props.item;
         return(
             <Container >
