@@ -75,7 +75,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapActionsToProps = { //como
-    getItems: getItems
+    getItems: getItems,
 };
 
 export default connect(mapStateToProps, mapActionsToProps/*{getItems}*/)(AdvertisersList);

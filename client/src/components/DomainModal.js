@@ -14,6 +14,11 @@ import {connect} from 'react-redux';
 import {newSearch} from '../actions/itemAction';
 
 class DomainModal extends Component{
+    componentDidMount(){
+        if (this.props.website)
+            this.props.newSearch({domain: this.props.website});
+    }
+
     state = {
         modal:false,
         name: ''
@@ -43,6 +48,8 @@ class DomainModal extends Component{
     };
 
     render() {
+
+        console.log("this.props.website", this.props.website)
         return(
             <div>
                 <Button
@@ -81,6 +88,7 @@ class DomainModal extends Component{
         )
     }
 }
+
 const mapStateToProps = state => ({
     item: state.item
 });

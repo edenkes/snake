@@ -3,7 +3,7 @@ import {Container, Button } from 'reactstrap';
 import {connect} from 'react-redux'
 import { FaArrowDown, FaArrowUp} from 'react-icons/fa';
 import PropTypes from "prop-types";
-import {getItems, sortTable} from "../actions/itemAction";
+import {sortTable} from "../actions/itemAction";
 
 class SortButton extends Component{
     state = {

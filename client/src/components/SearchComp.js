@@ -2,10 +2,15 @@ import React, {Component} from 'react';
 import {Container, Input} from 'reactstrap';
 import {connect} from 'react-redux'
 import PropTypes from "prop-types";
-import {handleChange, sortTable} from "../actions/itemAction";
+import {handleChange} from "../actions/itemAction";
 
 class SearchComp extends Component{
+
     render() {
+
+        // console.log("url", this.props);
+        // console.log("url", this.props.location );
+
         const  {inputSearch} = this.props.item;
         return(
             <Container >
